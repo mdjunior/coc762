@@ -41,3 +41,7 @@ docker run -it --rm -p 8888:8888 jupyter/pyspark-notebook
 ```
 
 Após a inicialização, você pode fazer upload do arquivo `Aleatoriedade em curvas elípticas.ipynb` e realizar a análise.
+
+### Execução utilizando o HDFS e MapReduce
+
+Arquivos `.java` são fornecidos para execução através dos arquivos caso eles sejam copiados no HDFS.
