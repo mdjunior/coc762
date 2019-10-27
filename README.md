@@ -24,13 +24,20 @@ Dessa forma, as dependências serão instaladas no sistema. Você pode iniciar u
 
 ```
 time python3 generate.py
+
+real    4456m40.793s
+user    4368m37.386s
+sys     39m15.486s
 ```
 
-Ao término, você terá o tempo de CPU utilizado para a geração dos dados. Caso seja do seu interesse, você poderá enviar os dados para um bucket no S3, executando:
+Esse tempo foi obtido usando uma instância do tipo t2.micro. Ao término, você terá o tempo de CPU utilizado para a geração dos dados. Caso seja do seu interesse, você poderá enviar os dados para um bucket no S3, executando:
 
 ```
 aws s3 sync . s3://<seu bucket>
 ```
+
+Os arquivos terão no total cerca de 26.1 GB de ocupação do S3.
+
 
 ### Execução da análise com Spark
 
